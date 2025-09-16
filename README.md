@@ -1,1 +1,1 @@
-<h1>testing rest API</h1>
+<h1>Testing Rest API</h1>
