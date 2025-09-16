@@ -1,8 +1,10 @@
 const express = require('express');
-const { getPosts } = require('../controllers/feed');
+const feedRoutes = require('../controllers/feed');
 
 const router = express.Router();
 
-router.get('/posts', getPosts);
+router.get('/posts', feedRoutes.getPosts);
+
+router.post('/post', feedRoutes.createPost);
 
 module.exports = router;
